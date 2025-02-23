@@ -1,7 +1,7 @@
 import simpleGit, { SimpleGit, SimpleGitOptions } from 'simple-git';
 import createLogger from "progress-estimator";
 import chalk from 'chalk';
-const figlet = require('figlet');
+// const figlet = require('figlet');
 // import figlet from 'figlet';
 import log from './log';
 
@@ -15,10 +15,10 @@ const logger = createLogger({
   }
 });
 
-const printer = async () => {
-  const data = await figlet('欢迎使用tdczw-cli脚手架');
-  console.log(chalk.rgb(40, 156, 193).visible(data));
-}
+// const printer = async () => {
+//   const data = await figlet('欢迎使用tdczw-cli脚手架');
+//   console.log(chalk.rgb(40, 156, 193).visible(data));
+// }
 
 const gitOptions: Partial<SimpleGitOptions> = {
   baseDir: process.cwd(),    // 当前工作目录
@@ -37,7 +37,7 @@ export const clone = async (url: string, projectName: string, options: string[])
     log.info(`${chalk.yellow('pnpm')} install`);
     log.info(`${chalk.yellow('pnpm')} run dev`);
 
-    await printer();
+    // await printer();
   } catch (error) {
     log.error(chalk.red('代码下载失败'));
   }

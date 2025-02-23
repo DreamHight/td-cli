@@ -15,7 +15,7 @@
   ],
   "author": "DreamHight",
   "bin": {
-    "td": "bin/index.js"
+    "tdczw": "bin/index.js"
   },
   "files": [
     "dist",

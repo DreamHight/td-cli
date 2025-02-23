@@ -68,7 +68,7 @@ export const getNpmLatestVersion = async (name: string) => {
 }
 export const checkVersion = async (name: string, currentVersion: string) => {
   const latestVersion = await getNpmLatestVersion(name);
-  const need = gt(latestVersion, currentVersion);
+  const need: boolean = gt(latestVersion, currentVersion);
   if(need) {
     log.info(`检测到 tdczw 最新版:${chalk.blueBright(latestVersion)} 当前版本:${chalk.blueBright(currentVersion)} ~`);
     log.info(`可使用 ${chalk.yellow('pnpm')} install tdczw-cli@latest 更新 ~`);

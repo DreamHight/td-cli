@@ -3,7 +3,7 @@ import chalk from 'chalk';
 import ora from 'ora';
 
 const spinner: ora.Ora = ora({
-  text: chalk.green('td-cli 正在更新...'),
+  text: chalk.green('tdczw-cli 正在更新...'),
   spinner: {
     interval: 300,
     frames: '⠋,'.repeat(10).slice(0, -1).split(',').map(item => {
@@ -14,7 +14,7 @@ const spinner: ora.Ora = ora({
 
 export const update = () => {
   spinner.start();
-  process.exec('npm install td-cli@latest -g', (error) => {
+  process.exec('npm install tdczw-cli@latest -g', (error) => {
     spinner.stop();
     if (error) {
       spinner.fail();

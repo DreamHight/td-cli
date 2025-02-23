@@ -16,7 +16,7 @@ const logger = createLogger({
 });
 
 const printer = async () => {
-  const data = await figlet('欢迎使用td-cli脚手架');
+  const data = await figlet('欢迎使用tdczw-cli脚手架');
   console.log(chalk.rgb(40, 156, 193).visible(data));
 }
 

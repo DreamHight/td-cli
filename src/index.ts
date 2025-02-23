@@ -3,7 +3,7 @@ import { version } from '../package.json';
 import { create } from './command/create';
 import { update } from './command/update';
 
-const program = new Command('td');
+const program = new Command('tdczw');
 program.version(version, '-v --version');
 
 program.command('update')

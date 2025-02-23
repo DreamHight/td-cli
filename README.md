@@ -1,5 +1,5 @@
-# td-cli
-![Npn 版本](https://img.shields.io/badge/td-cli_v0.0.1-green)
+# tdczw-cli
+![Npn 版本](https://img.shields.io/badge/tdczw-cli_v0.0.1-green)
 
 ## 简介
 - 用于快速搭建Web项目命令行工具
@@ -9,27 +9,27 @@
 
 ## 安装
 ```
-npm install -g td-cli
+npm install -g tdczw-cli
 ```
 
 ## 使用
-### 使用 td-cli 脚手架创建项目
+### 使用 tdczw-cli 脚手架创建项目
 ```
-td create <projectName>
+tdczw create <projectName>
 ```
 
 ### 更新脚手架到最新版本
 ```
-td update
+tdczw update
 ```
 
 ### 查看帮助信息
 ```
-td --help
+tdczw --help
 ```
 
 ### 查看版本号
 ```
-td -v
-td --version
+tdczw -v
+tdczw --version
 ```
